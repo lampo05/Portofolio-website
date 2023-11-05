@@ -1,0 +1,134 @@
+/* Reset CSS */
+/* Tambahkan CSS reset di sini */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+.hero {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.content {
+    text-align: left;
+    padding: 50px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Tambahan desain untuk penjelasan tentang diri Anda */
+.content p::before {
+    content: open-quote;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.content p::after {
+    content: close-quote;
+    font-size: 2em;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
